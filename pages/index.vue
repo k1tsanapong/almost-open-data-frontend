@@ -39,28 +39,28 @@
       align="center"
       justify="center"
     >
-      <v-col v-ripple md="2">
+      <v-col v-ripple class="cursor-pointer" md="2">
         <v-card class="text-center py-3" flat color="transparent">
           <v-icon size="40">mdi-home-outline</v-icon>
           <div>Home</div>
         </v-card>
       </v-col>
 
-      <v-col v-ripple md="2">
+      <v-col v-ripple class="cursor-pointer" md="2">
         <v-card class="text-center py-3" flat color="transparent">
           <v-icon size="40">mdi-folder-open-outline</v-icon>
           <div>Datasets</div>
         </v-card>
       </v-col>
 
-      <v-col v-ripple md="2">
+      <v-col v-ripple class="cursor-pointer" md="2">
         <v-card class="text-center py-3" flat color="transparent">
           <v-icon size="40"> mdi-folder-cog-outline</v-icon>
           <div>Data Inventory</div>
         </v-card>
       </v-col>
 
-      <v-col v-ripple md="2">
+      <v-col v-ripple class="cursor-pointer" md="2">
         <v-card class="text-center py-3" flat color="transparent">
           <v-icon size="40">mdi-folder-file-outline</v-icon>
           <div>Data Request</div>
@@ -72,13 +72,37 @@
       <v-img src="/mfu_bg.png" cover max-height="30rem">
         <v-row no-gutters align="center" justify="center" class="fill-height">
           <v-col cols="8" md="6">
-            <v-text-field
+            <v-row>
+              <v-text-field
               rounded="lg"
               bg-color="white"
               label="Search Datasets"
               variant="solo"
             ></v-text-field>
+            </v-row>
+
+            <v-row justify="center">
+              <v-card v-ripple  rounded="lg" color="primary" class="cursor-pointer pa-3" >
+                <v-icon>
+                  mdi-magnify
+                </v-icon>
+              Search
+            </v-card>
+            </v-row>
+
+            <v-row justify="center" class="mt-7">
+              <v-card v-ripple  rounded="lg" color="primary" class="cursor-pointer pa-3" >
+                <v-icon>
+                  mdi-chart-line
+                </v-icon>
+              420
+            </v-card>
+            </v-row>
+
           </v-col>
+
+         
+
         </v-row>
       </v-img>
     </v-row>
@@ -86,8 +110,7 @@
     <v-row class="fill-height mt-2" no-gutters align="center">
       <v-row align="center">
         <v-col>
-          <v-divider style="opacity: 1" color="secondary " thickness="4">
-          </v-divider>
+          <v-divider style="opacity: 1" color="secondary " thickness="4" />
         </v-col>
 
         <v-col cols="2" md="1">
@@ -95,8 +118,8 @@
         </v-col>
 
         <v-col>
-          <v-divider style="opacity: 1" color="secondary " thickness="4">
-          </v-divider>
+          <v-divider style="opacity: 1" color="secondary " thickness="4" />
+
         </v-col>
       </v-row>
     </v-row>
@@ -107,7 +130,7 @@
       <v-col>
         <v-row>
           <v-col cols="6" md="4" class="d-flex justify-center">
-            <v-card v-ripple class="custom-card" width="180px" height="80px">
+            <v-card v-ripple class="cursor-pointer custom-card" width="180px" height="80px">
               <span
                 class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
                 >School</span
@@ -116,7 +139,7 @@
           </v-col>
 
           <v-col cols="6" md="4" class="d-flex justify-center">
-            <v-card v-ripple class="custom-card" width="180px" height="80px">
+            <v-card v-ripple class="cursor-pointer custom-card" width="180px" height="80px">
               <span
                 class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
                 >Centre</span
@@ -125,7 +148,7 @@
           </v-col>
 
           <v-col cols="6" md="4" class="d-flex justify-center">
-            <v-card v-ripple class="custom-card" width="180px" height="80px">
+            <v-card v-ripple class="cursor-pointer custom-card" width="180px" height="80px">
               <span
                 class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
                 >Institution</span
@@ -134,7 +157,7 @@
           </v-col>
 
           <v-col cols="6" md="4" class="d-flex justify-center">
-            <v-card v-ripple class="custom-card" width="180px" height="80px">
+            <v-card v-ripple class="cursor-pointer custom-card" width="180px" height="80px">
               <span
                 class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
                 >Academic Office</span
@@ -143,7 +166,7 @@
           </v-col>
 
           <v-col cols="6" md="4" class="d-flex justify-center">
-            <v-card v-ripple class="custom-card" width="180px" height="80px">
+            <v-card v-ripple class="cursor-pointer custom-card" width="180px" height="80px">
               <span
                 class="text-white text-center fill-height d-flex align-center justify-center"
                 >Central Administrative Office</span
@@ -152,7 +175,7 @@
           </v-col>
 
           <v-col cols="6" md="4" class="d-flex justify-center">
-            <v-card v-ripple class="custom-card" width="180px" height="80px">
+            <v-card v-ripple class="cursor-pointer custom-card" width="180px" height="80px">
               <span
                 class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
                 >University Council Office</span
@@ -161,7 +184,7 @@
           </v-col>
 
           <v-col cols="6" md="4" class="d-flex justify-center">
-            <v-card v-ripple class="custom-card" width="180px" height="80px">
+            <v-card v-ripple class="cursor-pointer custom-card" width="180px" height="80px">
               <span
                 class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
                 >Internal Audit
@@ -170,7 +193,7 @@
           </v-col>
 
           <v-col cols="6" md="4" class="d-flex justify-center">
-            <v-card v-ripple class="custom-card" width="180px" height="80px">
+            <v-card v-ripple class="cursor-pointer custom-card" width="180px" height="80px">
               <span
                 class="text-white text-center fill-height d-flex align-center justify-center"
                 >Property and Asset Management Office</span
@@ -179,7 +202,7 @@
           </v-col>
 
           <v-col cols="6" md="4" class="d-flex justify-center">
-            <v-card v-ripple class="custom-card" width="180px" height="80px">
+            <v-card v-ripple class="cursor-pointer custom-card" width="180px" height="80px">
               <span
                 class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
                 >Special Unit</span
@@ -190,6 +213,10 @@
       </v-col>
 
       <v-col cols="1" md="2" lg="3"> </v-col>
+
+      <v-divider class="mt-10" style="opacity: 1" color="secondary " thickness="4" />
+
+
     </v-row>
 
     <v-footer class="bg-primary mt-10">
@@ -248,4 +275,6 @@ const value = ref(new Date());
     rgb(var(--v-theme-secondary)) 100%
   );
 }
+
+
 </style>
