@@ -29,28 +29,28 @@
       justify="center"
     >
       <v-col v-ripple cols="1">
-        <v-card class="text-center my-3" flat color="transparent">
+        <v-card class="text-center py-3" flat color="transparent">
           <v-icon size="48">mdi-home-outline</v-icon>
           <div>Home</div>
         </v-card>
       </v-col>
 
       <v-col v-ripple cols="1">
-        <v-card class="text-center my-3" flat color="transparent">
+        <v-card class="text-center py-3" flat color="transparent">
           <v-icon size="48">mdi-folder-open-outline</v-icon>
           <div>Datasets</div>
         </v-card>
       </v-col>
 
       <v-col v-ripple cols="1">
-        <v-card class="text-center my-3" flat color="transparent">
+        <v-card class="text-center py-3" flat color="transparent">
           <v-icon size="48"> mdi-folder-cog-outline</v-icon>
           <div>Data Inventory</div>
         </v-card>
       </v-col>
 
       <v-col v-ripple cols="1">
-        <v-card class="text-center my-3" flat color="transparent">
+        <v-card class="text-center py-3" flat color="transparent">
           <v-icon size="48">mdi-folder-file-outline</v-icon>
           <div>Data Request</div>
         </v-card>
@@ -58,7 +58,7 @@
     </v-row>
 
     <v-row class="ma-0">
-      <v-img src="/mfu_bg.png" cover max-height="50rem">
+      <v-img src="/mfu_bg.png" cover max-height="30rem">
         <v-row no-gutters align="center" justify="center" class="fill-height">
           <v-col cols="12" md="6" lg="5" sm="6">
             <v-text-field
@@ -77,21 +77,153 @@
     </v-row>
 
     <v-row class="fill-height mt-2" no-gutters align="center">
+      <v-row align="center">
+        <v-col>
+          <v-divider style="opacity: 1" color="secondary " thickness="4">
+          </v-divider>
+        </v-col>
 
-    <!--    Horizontal divider with text in the middle?-->
+        <v-col cols="1">
+          <div class="text-center text-h5">Group</div>
+        </v-col>
 
-    <div style="width: 100%; height: 20px; border-bottom: 1px solid black; text-align: center">
-  <span style="font-size: 40px; background-color: #F3F5F6; padding: 0 10px;">
-    Section Title <!--Padding is optional-->
-  </span>
-</div>
-
+        <v-col>
+          <v-divider style="opacity: 1" color="secondary " thickness="4">
+          </v-divider>
+        </v-col>
+      </v-row>
     </v-row>
 
+    <v-row>
+
+  
+
+
+      <v-col class="corner-row" cols="2" />
+
+        <v-col cols="2">
+          <v-card class="custom-card" color="red" dark>
+            <v-card-text class="text-center">
+              <div class="text-h6">School</div>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+
+        <v-col cols="1" />
+
+
+        <v-col cols="2">
+          <v-card class="custom-card" color="red" dark>
+            <v-card-text class="text-center">
+              <div class="text-h6">Centre</div>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col cols="1" />
+
+
+        <v-col cols="2">
+          <v-card class="custom-card" color="red" dark>
+            <v-card-text class="text-center">
+              <div class="text-h6">Institution</div>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col class="corner-row" cols="2" />
+
+        <v-col class="corner-row" cols="2" />
+
+<v-col cols="2">
+  <v-card class="custom-card" color="red" dark>
+    <v-card-text class="text-center">
+      <div class="text-h6">Academic Office</div>
+    </v-card-text>
+  </v-card>
+</v-col>
+
+
+<v-col cols="1" />
+
+
+<v-col cols="2">
+  <v-card class="custom-card" color="red" dark>
+    <v-card-text class="text-center">
+      <div class="text-h6">Central Administrative Office</div>
+    </v-card-text>
+  </v-card>
+</v-col>
+
+<v-col cols="1" />
+
+
+<v-col cols="2">
+  <v-card class="custom-card" color="red" dark>
+    <v-card-text class="text-center">
+      <div class="text-h6">University Council Office</div>
+    </v-card-text>
+  </v-card>
+</v-col>
+
+<v-col class="corner-row" cols="2" />
+
+ <v-col class="corner-row" cols="2" />
+
+        <v-col cols="2">
+          <v-card class="custom-card" color="red" dark>
+            <v-card-text class="text-center">
+              <div class="text-h6">Internal Audit
+
+</div>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+
+        <v-col cols="1" />
+
+
+        <v-col cols="2">
+          <v-card class="custom-card" color="red" dark>
+            <v-card-text class="text-center">
+              <div class="text-h6">Property and Asset Management Office</div>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col cols="1" />
+
+
+        <v-col cols="2">
+          <v-card class="custom-card" color="red" dark>
+            <v-card-text class="text-center">
+              <div class="text-h6">Special Unit</div>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col class="corner-row" cols="2" />
+        
+
+
+  
+
+
+
+    </v-row>
   </v-container>
 </template>
 
 <script setup></script>
 
-<style>
+<style scoped>
+.custom-card {
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--v-theme-primary)) 80%,
+    rgb(var(--v-theme-secondary)) 100%
+  );
+}
 </style>
