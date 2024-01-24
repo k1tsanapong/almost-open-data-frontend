@@ -1,15 +1,96 @@
 <template>
   <div>
     <v-app>
+      <v-row class="mt-2" no-gutters align="center" style="max-height: 80px">
+        <v-col cols="2" md="1">
+          <v-img
+            class="d-flex justify-end"
+            src="/mfu_logo.png"
+            max-height="5rem"
+          />
+        </v-col>
+
+        <v-col cols="4" md="3">
+          <div class="text-md-h5 text-lg-h4 font-weight-bold">
+            MFU Open Data
+          </div>
+        </v-col>
+
+        <v-spacer />
+
+        <v-col cols="2" md="1">
+          <v-row>
+            <v-icon> mdi-xml </v-icon>
+
+            Developer
+          </v-row>
+        </v-col>
+
+        <v-col class="hidden-lg-and-up" cols="1"> </v-col>
+
+        <V-col cols="2" md="1">
+          <v-row>
+            <v-icon> mdi-exit-to-app </v-icon>
+            Staff
+          </v-row>
+        </V-col>
+      </v-row>
+
+      <v-row
+        class="bg-red mt-5"
+        no-gutters
+        align="center"
+        justify="center"
+        style="max-height: 80px"
+      >
+      <v-col v-ripple class="cursor-pointer" md="2">
+      <router-link to="/" class="text-decoration-none">
+        <v-card class="text-center py-3 not-active" flat>
+          <v-icon size="40">mdi-home-outline</v-icon>
+          <div>Home</div>
+        </v-card>
+      </router-link>
+    </v-col>
+
+    <v-col v-ripple class="cursor-pointer" md="2">
+      <router-link to="/datasets" class="text-decoration-none">
+        <v-card class="text-center py-3 not-active" flat>
+          <v-icon size="40">mdi-folder-open-outline</v-icon>
+          <div>Datasets</div>
+        </v-card>
+      </router-link>
+    </v-col>
+
+    <v-col v-ripple class="cursor-pointer" md="2">
+      <router-link to="/data-inventory" class="text-decoration-none">
+        <v-card class="text-center py-3 not-active" flat>
+          <v-icon size="40">mdi-folder-cog-outline</v-icon>
+          <div>Data Inventory</div>
+        </v-card>
+      </router-link>
+    </v-col>
+
+    <v-col v-ripple class="cursor-pointer" md="2">
+      <router-link to="/data-request" class="text-decoration-none">
+        <v-card class="text-center py-3 not-active" flat>
+          <v-icon size="40">mdi-folder-file-outline</v-icon>
+          <div>Data Request</div>
+        </v-card>
+      </router-link>
+    </v-col>
+      </v-row>
+
       <v-main>
-        <slot />
+        <v-container fluid class="pa-0">
+          <slot />
+        </v-container>
       </v-main>
 
       <v-footer class="bg-primary mt-10">
         <v-row class="ma-0">
           <v-col class="hidden-sm-and-down" md="2" />
 
-          <v-col class="py-16" cols="12" md="4">
+          <v-col class="pt-16" cols="12" md="4">
             <v-row justify="center">
               <div style="height: 100px">
                 <v-divider
@@ -52,3 +133,18 @@
     </v-app>
   </div>
 </template>
+
+
+<style scoped>
+/* Add custom styles for router-link-active class */
+.router-link-active {
+  background-color: #ffcc00;
+  color: #333; /* Text color for active link */
+  border-radius: 4px; /* Border-radius for rounded corners */
+}
+
+.not-active{
+  background-color: transparent;
+  color: #fff;
+}
+</style>

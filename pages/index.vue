@@ -1,74 +1,6 @@
 <template>
-  <v-container fluid class="pa-0">
-    <v-row class="fill-height mt-2" no-gutters align="center">
-      <v-col cols="2" md="1">
-        <v-img
-          class="d-flex justify-end"
-          src="/mfu_logo.png"
-          max-height="5rem"
-        />
-      </v-col>
-
-      <v-col cols="4" md="3">
-        <div class="text-md-h5 text-lg-h4 font-weight-bold">MFU Open Data</div>
-      </v-col>
-
-      <v-spacer />
-
-      <v-col cols="2" md="1">
-        <v-row>
-          <v-icon> mdi-xml </v-icon>
-
-          Developer
-        </v-row>
-      </v-col>
-
-      <v-col class="hidden-lg-and-up" cols="1"> </v-col>
-
-      <V-col cols="2" md="1">
-        <v-row>
-          <v-icon> mdi-exit-to-app </v-icon>
-          Staff
-        </v-row>
-      </V-col>
-    </v-row>
-
-    <v-row
-      class="bg-red fill-height mt-5"
-      no-gutters
-      align="center"
-      justify="center"
-    >
-      <v-col v-ripple class="cursor-pointer" md="2">
-        <v-card class="text-center py-3" flat color="transparent">
-          <v-icon size="40">mdi-home-outline</v-icon>
-          <div>Home</div>
-        </v-card>
-      </v-col>
-
-      <v-col v-ripple class="cursor-pointer" md="2">
-        <v-card class="text-center py-3" flat color="transparent">
-          <v-icon size="40">mdi-folder-open-outline</v-icon>
-          <div>Datasets</div>
-        </v-card>
-      </v-col>
-
-      <v-col v-ripple class="cursor-pointer" md="2">
-        <v-card class="text-center py-3" flat color="transparent">
-          <v-icon size="40"> mdi-folder-cog-outline</v-icon>
-          <div>Data Inventory</div>
-        </v-card>
-      </v-col>
-
-      <v-col v-ripple class="cursor-pointer" md="2">
-        <v-card class="text-center py-3" flat color="transparent">
-          <v-icon size="40">mdi-folder-file-outline</v-icon>
-          <div>Data Request</div>
-        </v-card>
-      </v-col>
-    </v-row>
-
-    <v-row class="ma-0">
+  <div>
+    <v-row class="ma-0" >
       <v-img src="/mfu_bg.png" cover max-height="30rem">
         <v-row no-gutters align="center" justify="center" class="fill-height">
           <v-col cols="8" md="6">
@@ -269,7 +201,7 @@
     </v-row>
 
  
-  </v-container>
+  </div>
 </template>
 
 <script setup>
@@ -285,5 +217,9 @@ const value = ref(new Date());
     rgb(var(--v-theme-primary)) 80%,
     rgb(var(--v-theme-secondary)) 100%
   );
+}
+
+.sometest{
+  color: red;
 }
 </style>
