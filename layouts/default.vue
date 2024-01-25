@@ -43,41 +43,69 @@
         justify="center"
         style="max-height: 80px"
       >
-      <v-col v-ripple class="cursor-pointer" md="2">
-      <router-link to="/" class="text-decoration-none">
-        <v-card class="text-center py-3 not-active" flat>
-          <v-icon size="40">mdi-home-outline</v-icon>
-          <div>Home</div>
-        </v-card>
-      </router-link>
-    </v-col>
+        <v-col v-ripple class="cursor-pointer" md="2">
+          <nuxt-link to="/" class="text-decoration-none">
+            <v-card
+              class="text-center py-3"
+              flat
+              :class="{
+                active: isRouteActive('/'),
+                inactive: !isRouteActive('/'),
+              }"
+            >
+              <v-icon size="40">mdi-home-outline</v-icon>
+              <div>Home</div>
+            </v-card>
+          </nuxt-link>
+        </v-col>
 
-    <v-col v-ripple class="cursor-pointer" md="2">
-      <router-link to="/datasets" class="text-decoration-none">
-        <v-card class="text-center py-3 not-active" flat>
-          <v-icon size="40">mdi-folder-open-outline</v-icon>
-          <div>Datasets</div>
-        </v-card>
-      </router-link>
-    </v-col>
+        <v-col v-ripple class="cursor-pointer" md="2">
+          <nuxt-link to="/datasets" class="text-decoration-none">
+            <v-card
+              class="text-center py-3 not-active"
+              flat
+              :class="{
+                active: isRouteActive('/datasets'),
+                inactive: !isRouteActive('/datasets'),
+              }"
+            >
+              <v-icon size="40">mdi-folder-open-outline</v-icon>
+              <div>Datasets</div>
+            </v-card>
+          </nuxt-link>
+        </v-col>
 
-    <v-col v-ripple class="cursor-pointer" md="2">
-      <router-link to="/data-inventory" class="text-decoration-none">
-        <v-card class="text-center py-3 not-active" flat>
-          <v-icon size="40">mdi-folder-cog-outline</v-icon>
-          <div>Data Inventory</div>
-        </v-card>
-      </router-link>
-    </v-col>
+        <v-col v-ripple class="cursor-pointer" md="2">
+          <nuxt-link to="/data-inventory" class="text-decoration-none">
+            <v-card
+              class="text-center py-3 not-active"
+              flat
+              :class="{
+                active: isRouteActive('/data-inventory'),
+                inactive: !isRouteActive('/data-inventory'),
+              }"
+            >
+              <v-icon size="40">mdi-folder-cog-outline</v-icon>
+              <div>Data Inventory</div>
+            </v-card>
+          </nuxt-link>
+        </v-col>
 
-    <v-col v-ripple class="cursor-pointer" md="2">
-      <router-link to="/data-request" class="text-decoration-none">
-        <v-card class="text-center py-3 not-active" flat>
-          <v-icon size="40">mdi-folder-file-outline</v-icon>
-          <div>Data Request</div>
-        </v-card>
-      </router-link>
-    </v-col>
+        <v-col v-ripple class="cursor-pointer" md="2">
+          <nuxt-link to="/data-request" class="text-decoration-none">
+            <v-card
+              class="text-center py-3 not-active"
+              flat
+              :class="{
+                active: isRouteActive('/data-request'),
+                inactive: !isRouteActive('/data-request'),
+              }"
+            >
+              <v-icon size="40">mdi-folder-file-outline</v-icon>
+              <div>Data Request</div>
+            </v-card>
+          </nuxt-link>
+        </v-col>
       </v-row>
 
       <v-main>
@@ -134,17 +162,38 @@
   </div>
 </template>
 
-
 <style scoped>
 /* Add custom styles for router-link-active class */
-.router-link-active {
-  background-color: #ffcc00;
-  color: #333; /* Text color for active link */
-  border-radius: 4px; /* Border-radius for rounded corners */
+
+.active {
+  background: white;
+  color: black;
+  border-radius: 0%;
 }
 
-.not-active{
-  background-color: transparent;
-  color: #fff;
+.inactive {
+  background: transparent;
+  color: white;
+  border-radius: 0%;
 }
 </style>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    isRouteActive(link) {
+      if (this.$route.path == link) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+    log() {
+      console.log(this.categories);
+    },
+  },
+};
+</script>

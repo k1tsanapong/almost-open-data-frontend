@@ -4,6 +4,13 @@ import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  router: {
+    options: {
+      linkActiveClass: "custom-active-link",
+      linkExactActiveClass: "custom-exact-active-link",
+    },
+  },
+
   //...
   build: {
     transpile: ["vuetify"],
@@ -24,7 +31,7 @@ export default defineNuxtConfig({
     },
     //...
 
-    '@nuxtjs/google-fonts',
+    "@nuxtjs/google-fonts",
   ],
   vite: {
     vue: {
@@ -34,10 +41,10 @@ export default defineNuxtConfig({
     },
   },
 
-  googleFonts : {
+  googleFonts: {
     // Options
     families: {
-      Poppins: [ 100, 200, 300, 400, 500, 600, 700, 800, 900],
+      Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
     download: false,
     useStylesheet: true,
