@@ -223,6 +223,30 @@
             </v-col>
           </v-col>
         </v-row>
+
+        <v-row class="mt-10" justify="space-between">
+          <v-col cols="1" />
+
+          <v-col class="d-flex justify-center">
+            <v-btn class="mr-5" rounded="lg" color="orange">
+              <div>Clear All</div>
+            </v-btn>
+
+            <v-btn class="mr-5" rounded="lg" color="orange">
+              <div >Clear</div>
+            </v-btn>
+
+            <v-btn class="mr-5" rounded="lg" color="green">
+              <div >Download All</div>
+            </v-btn>
+
+            <v-btn class="mr-5" rounded="lg" color="green">
+              <div >Download</div>
+            </v-btn>
+          </v-col>
+
+          <v-col cols="1" />
+        </v-row>
       </v-col>
 
       <v-col cols="1" />
