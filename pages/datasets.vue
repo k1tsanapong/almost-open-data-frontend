@@ -55,14 +55,14 @@
         </v-row>
 
         <v-row class="mt-16">
-          <v-col class="pa-0" cols="12" md="7">
+          <v-col class="pa-0" cols="12" sm="7">
             <div class="fill-height pa-5" style="border: 1px solid black">
               <v-row class="px-10 pt-2">
-                <v-col cols="12" sm="3" md="3" class="py-0">
+                <v-col cols="12" sm="4" md="3" class="py-0">
                   <div class="font-weight-bold">Name :</div>
                 </v-col>
 
-                <v-col cols="12" sm="9" md="9" class="py-0">
+                <v-col cols="12" sm="7" md="9" class="py-0 pl-10">
                   <div>
                     Budgetary Information for Revenue and Expenditure in the
                     Procurement Department 2565
@@ -79,11 +79,11 @@
               </v-row>
 
               <v-row class="px-10 pt-2">
-                <v-col cols="12" sm="3" md="3" class="py-0">
+                <v-col cols="12" sm="4" md="3" class="py-0">
                   <div class="font-weight-bold">Resource ID :</div>
                 </v-col>
 
-                <v-col cols="12" sm="9" md="9" class="py-0">
+                <v-col cols="12" sm="7" md="9" class="py-0 pl-10">
                   <div>4gdtd37fyf44646</div>
                 </v-col>
 
@@ -97,11 +97,11 @@
               </v-row>
 
               <v-row class="px-10 pt-2">
-                <v-col cols="12" sm="3" md="3" class="py-0">
+                <v-col cols="12" sm="4" md="3" class="py-0">
                   <div class="font-weight-bold">Data Format :</div>
                 </v-col>
 
-                <v-col cols="12" sm="9" md="9" class="py-0">
+                <v-col cols="12" sm="7" md="9" class="py-0 pl-10">
                   <div>CSV , XSLX</div>
                 </v-col>
 
@@ -115,11 +115,11 @@
               </v-row>
 
               <v-row class="px-10 pt-2">
-                <v-col cols="12" sm="3" md="3" class="py-0">
+                <v-col cols="12" sm="4" md="3" class="py-0">
                   <div class="font-weight-bold">Detailed Information :</div>
                 </v-col>
 
-                <v-col cols="12" sm="9" md="9" class="py-0">
+                <v-col cols="12" sm="7" md="9" class="py-0 pl-10">
                   <div>
                     Budgetary Information for Revenue and Expenditure in the
                     Procurement Department for the Academic Year 2022
@@ -134,11 +134,11 @@
                   />
                 </v-col> </v-row
               ><v-row class="px-10 pt-2">
-                <v-col cols="12" sm="3" md="3" class="py-0">
+                <v-col cols="12" sm="4" md="3" class="py-0">
                   <div class="font-weight-bold">Conditions Accessing :</div>
                 </v-col>
 
-                <v-col cols="12" sm="9" md="9" class="py-0">
+                <v-col cols="12" sm="7" md="9" class="py-0 pl-10">
                   <div>None</div>
                 </v-col>
 
@@ -150,11 +150,11 @@
                   />
                 </v-col> </v-row
               ><v-row class="px-10 pt-2">
-                <v-col cols="12" sm="3" md="3" class="py-0">
+                <v-col cols="12" sm="4" md="3" class="py-0">
                   <div class="font-weight-bold">Start Date :</div>
                 </v-col>
 
-                <v-col cols="12" sm="9" md="9" class="py-0">
+                <v-col cols="12" sm="7" md="9" class="py-0 pl-10">
                   <div>2022-03-08</div>
                 </v-col>
 
@@ -168,11 +168,11 @@
               </v-row>
 
               <v-row class="px-10 pt-2">
-                <v-col cols="12" sm="3" md="3" class="py-0">
+                <v-col cols="12" sm="4" md="3" class="py-0">
                   <div class="font-weight-bold">Date of Dataset Update :</div>
                 </v-col>
 
-                <v-col cols="12" sm="9" md="9" class="py-0">
+                <v-col cols="12" sm="7" md="9" class="py-0 pl-10">
                   <div>2022-03-08</div>
                 </v-col>
 
@@ -187,11 +187,14 @@
             </div>
           </v-col>
 
-          <v-col cols="12" sm="5" md="4">
-          
-
+          <v-col cols="12" sm="5">
             <v-row class="mb-5">
-              <v-col cols="4" class="pa-0 pl-3">
+              <v-col
+                cols="12"
+                md="4"
+                class="pa-0"
+                :class="{ 'mt-3 pl-0': $vuetify.display.xs,'mt-0 pl-3': $vuetify.display.smAndUp}"
+              >
                 <div class="fill-height pa-3" style="border: 1px solid black">
                   <v-row justify="center">
                     <v-img
@@ -201,14 +204,19 @@
                     />
                   </v-row>
 
-                  <v-row  justify="center" >
-                      <div class="text-h6 font-weight-bold text-center">
-                        Download
-                      </div>
+                  <v-row justify="center">
+                    <div class="text-h6 font-weight-bold text-center">
+                      Download
+                    </div>
                   </v-row>
                 </div>
               </v-col>
-              <v-col cols="8" class="pa-0 pl-3">
+              <v-col
+                cols="12"
+                md="8"
+                class="pa-0"
+                :class="{ 'mt-3 pl-0': $vuetify.display.xs,'mt-3 pl-3': $vuetify.display.sm, 'mt-0 pl-3': $vuetify.display.mdAndUp}"
+              >
                 <div class="fill-height pa-3" style="border: 1px solid black">
                   <div style="color: #070747">
                     Budgetary Information for Revenue and Expenditure in the
@@ -223,6 +231,9 @@
                 </div>
               </v-col>
             </v-row>
+
+            
+
           </v-col>
         </v-row>
       </v-col>
@@ -232,10 +243,7 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
-
-const value = ref(new Date());
+<script>
 </script>
 
 <style scoped>
