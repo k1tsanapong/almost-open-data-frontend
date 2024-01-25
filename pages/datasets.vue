@@ -13,7 +13,7 @@
 
         <v-row class="mt-8">
           <v-card
-            class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+            class="mt-3 mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
             color="#4EA5F4"
             rounded="0"
             flat
@@ -23,7 +23,7 @@
           </v-card>
 
           <v-card
-            class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+            class="mt-3 mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
             color="#F4C64E"
             rounded="0"
             flat
@@ -33,7 +33,7 @@
           </v-card>
 
           <v-card
-            class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+            class="mt-3 mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
             color="transparent"
             rounded="0"
             flat
@@ -46,7 +46,7 @@
           </v-card>
 
           <v-card
-            class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+            class="mt-3 mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
             color="primary"
             max-height="40"
           >
@@ -55,13 +55,176 @@
         </v-row>
 
         <v-row class="mt-16">
-          <v-col cols="8" style="border: 1px solid black"> </v-col>
+          <v-col cols="8" style="border: 1px solid black">
+            <v-row class="px-10 pt-2">
+              <v-col cols="12" sm="3" md="3" class="py-0">
+                <div class="font-weight-bold">Name :</div>
+              </v-col>
 
-          <v-col cols="4" class="pl-5">
-            <v-row>
+              <v-col cols="12" sm="9" md="9" class="py-0">
+                <div>
+                  Budgetary Information for Revenue and Expenditure in the
+                  Procurement Department 2565
+                </div>
+              </v-col>
+
+              <v-col cols="12" class="pa-0 pt-2">
+                <v-divider
+                  color="#D9D9D9"
+                  thickness="2"
+                  class="border-opacity-100"
+                />
+              </v-col>
+            </v-row>
+
+            <v-row class="px-10 pt-2">
+              <v-col cols="12" sm="3" md="3" class="py-0">
+                <div class="font-weight-bold">Resource ID :</div>
+              </v-col>
+
+              <v-col cols="12" sm="9" md="9" class="py-0">
+                <div>
+                  4gdtd37fyf44646
+                </div>
+              </v-col>
+
+              <v-col cols="12" class="pa-0 pt-2">
+                <v-divider
+                  color="#D9D9D9"
+                  thickness="2"
+                  class="border-opacity-100"
+                />
+              </v-col>
+            </v-row>
+
+            <v-row class="px-10 pt-2">
+              <v-col cols="12" sm="3" md="3" class="py-0">
+                <div class="font-weight-bold">Data Format :</div>
+              </v-col>
+
+              <v-col cols="12" sm="9" md="9" class="py-0">
+                <div>
+                  CSV , XSLX 
+                </div>
+              </v-col>
+
+              <v-col cols="12" class="pa-0 pt-2">
+                <v-divider
+                  color="#D9D9D9"
+                  thickness="2"
+                  class="border-opacity-100"
+                />
+              </v-col>
+            </v-row>
+
+            <v-row class="px-10 pt-2">
+              <v-col cols="12" sm="3" md="3" class="py-0">
+                <div class="font-weight-bold">Detailed Information :</div>
+              </v-col>
+
+              <v-col cols="12" sm="9" md="9" class="py-0">
+                <div>
+                  Budgetary Information for Revenue and Expenditure in the Procurement Department for the Academic Year 2022
+                </div>
+              </v-col>
+
+              <v-col cols="12" class="pa-0 pt-2">
+                <v-divider
+                  color="#D9D9D9"
+                  thickness="2"
+                  class="border-opacity-100"
+                />
+              </v-col> </v-row
+            ><v-row class="px-10 pt-2">
+              <v-col cols="12" sm="3" md="3" class="py-0">
+                <div class="font-weight-bold">Conditions Accessing :</div>
+              </v-col>
+
+              <v-col cols="12" sm="9" md="9" class="py-0">
+                <div>
+                  None 
+                </div>
+              </v-col>
+
+              <v-col cols="12" class="pa-0 pt-2">
+                <v-divider
+                  color="#D9D9D9"
+                  thickness="2"
+                  class="border-opacity-100"
+                />
+              </v-col> </v-row
+            ><v-row class="px-10 pt-2">
+              <v-col cols="12" sm="3" md="3" class="py-0">
+                <div class="font-weight-bold">Start Date :</div>
+              </v-col>
+
+              <v-col cols="12" sm="9" md="9" class="py-0">
+                <div>
+                  2022-03-08
+                </div>
+              </v-col>
+
+              <v-col cols="12" class="pa-0 pt-2">
+                <v-divider
+                  color="#D9D9D9"
+                  thickness="2"
+                  class="border-opacity-100"
+                />
+              </v-col>
+            </v-row>
+
+            <v-row class="px-10 pt-2">
+              <v-col cols="12" sm="3" md="3" class="py-0">
+                <div class="font-weight-bold">Date of Dataset Update :</div>
+              </v-col>
+
+              <v-col cols="12" sm="9" md="9" class="py-0">
+                <div>
+                  2022-03-08
+                </div>
+              </v-col>
+
+              <v-col cols="12" class="pa-0 pt-2">
+                <v-divider
+                  color="#D9D9D9"
+                  thickness="2"
+                  class="border-opacity-100"
+                />
+              </v-col>
+            </v-row>
+          </v-col>
+
+          <v-col cols="12" sm="5" md="4" class="pl-5">
+            <v-row class="mb-5">
               <v-col cols="4" style="border: 1px solid black">
                 <v-row>
-                  <v-img class="mx-3 mt-3" src="/seki.png" />
+                  <v-img max-width="150px" class="mx-3 mt-3" src="/seki.png" />
+                </v-row>
+
+                <v-row>
+                  <v-col cols="12" class="text-center">
+                    <div class="text-h6 font-weight-bold text-center">Download</div>
+                  </v-col>
+                </v-row>
+              </v-col>
+              <v-col cols="7" class="ml-2" style="border: 1px solid black">
+                <div style="color: #070747">
+                  Budgetary Information for Revenue and Expenditure in the
+                  Procurement Department 2565
+                </div>
+                <div
+                  class="font-weight-bold pl-3"
+                  style="color: rgb(var(--v-theme-secondary))"
+                >
+                  Download
+                </div>
+              </v-col>
+            </v-row>
+
+            <v-row class="mb-5">
+              <v-col cols="4" style="border: 1px solid black">
+                <v-row>
+                  <v-img max-width="150px" class="mx-3 mt-3" src="/seki.png" />
                 </v-row>
 
                 <v-row>
