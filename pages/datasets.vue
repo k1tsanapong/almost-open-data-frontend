@@ -193,7 +193,10 @@
                 cols="12"
                 md="4"
                 class="pa-0"
-                :class="{ 'mt-3 pl-0': $vuetify.display.xs,'mt-0 pl-3': $vuetify.display.smAndUp}"
+                :class="{
+                  'mt-3 pl-0': $vuetify.display.xs,
+                  'mt-0 pl-3': $vuetify.display.smAndUp,
+                }"
               >
                 <div class="fill-height pa-3" style="border: 1px solid black">
                   <v-row justify="center">
@@ -215,7 +218,11 @@
                 cols="12"
                 md="8"
                 class="pa-0"
-                :class="{ 'mt-3 pl-0': $vuetify.display.xs,'mt-3 pl-3': $vuetify.display.sm, 'mt-0 pl-3': $vuetify.display.mdAndUp}"
+                :class="{
+                  'mt-3 pl-0': $vuetify.display.xs,
+                  'mt-3 pl-3': $vuetify.display.sm,
+                  'mt-0 pl-3': $vuetify.display.mdAndUp,
+                }"
               >
                 <div class="fill-height pa-3" style="border: 1px solid black">
                   <div style="color: #070747">
@@ -231,11 +238,149 @@
                 </div>
               </v-col>
             </v-row>
-
-            
-
           </v-col>
         </v-row>
+
+        <v-row class="mt-10">
+          <div class="text-h6">Related Information</div>
+        </v-row>
+
+        <v-row class="mt-10">
+          <v-col class="pa-0" cols="12">
+            <div class="fill-height pa-5" style="border: 1px solid black">
+              <v-row>
+                <v-col xs="12">
+                  <div class="font-weight-bold" style="color: #28acf6">
+                    Employee information in the Accounting department 2022
+                  </div>
+                </v-col>
+
+                <v-col class="d-flex justify-end" xs="12">
+                  <v-card
+                    class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                    color="#F46C4E"
+                    rounded="0"
+                    flat
+                    max-height="40"
+                  >
+                    Accounting
+                  </v-card>
+
+                  <v-card
+                    class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                    color="#F4C64E"
+                    rounded="0"
+                    flat
+                    max-height="40"
+                  >
+                    ERP
+                  </v-card>
+
+                  <v-card
+                    class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                    color="primary"
+                    max-height="40"
+                  >
+                    Add
+                  </v-card>
+                </v-col>
+              </v-row>
+
+              <v-row>
+                <v-col>
+                  <div class="font-weight-bold">
+                    Employee info in the Accounting
+                  </div>
+                </v-col>
+              </v-row>
+
+              <v-row>
+                <v-col>
+                  <div class="font-weight-bold">
+                    Last data update: October 24, 2022
+                  </div>
+                </v-col>
+              </v-row>
+
+              <v-row>
+                <v-col class="d-flex">
+                  <v-img class="mr-5" max-width="50px" src="/seki.png" />
+
+                  <v-img class="mr-5" max-width="50px" src="/seki.png" />
+                </v-col>
+              </v-row>
+            </div>
+          </v-col>
+        </v-row>
+
+        <v-row class="mt-10">
+          <v-col class="pa-0" cols="12">
+            <div class="fill-height pa-5" style="border: 1px solid black">
+              <v-row>
+                <v-col xs="12">
+                  <div class="font-weight-bold" style="color: #28acf6">
+                    Employee information in the Accounting department 2022
+                  </div>
+                </v-col>
+
+                <v-col class="d-flex justify-end" xs="12">
+                  <v-card
+                    class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                    color="#F46C4E"
+                    rounded="0"
+                    flat
+                    max-height="40"
+                  >
+                    Accounting
+                  </v-card>
+
+                  <v-card
+                    class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                    color="#F4C64E"
+                    rounded="0"
+                    flat
+                    max-height="40"
+                  >
+                    ERP
+                  </v-card>
+
+                  <v-card
+                    class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                    color="primary"
+                    max-height="40"
+                  >
+                    Add
+                  </v-card>
+                </v-col>
+              </v-row>
+
+              <v-row>
+                <v-col>
+                  <div class="font-weight-bold">
+                    Employee info in the Accounting
+                  </div>
+                </v-col>
+              </v-row>
+
+              <v-row>
+                <v-col>
+                  <div class="font-weight-bold">
+                    Last data update: October 24, 2022
+                  </div>
+                </v-col>
+              </v-row>
+
+              <v-row>
+                <v-col class="d-flex">
+                  <v-img class="mr-5" max-width="50px" src="/seki.png" />
+
+                  <v-img class="mr-5" max-width="50px" src="/seki.png" />
+                </v-col>
+              </v-row>
+            </div>
+          </v-col>
+        </v-row>
+
       </v-col>
 
       <v-col cols="1" />
@@ -243,8 +388,7 @@
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style scoped>
 .custom-card {
