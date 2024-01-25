@@ -1,0 +1,251 @@
+<template>
+  <div>
+    <v-row class="my-16">
+      <v-col cols="1" />
+
+      <v-col cols="10">
+        <v-row class="d-flex">
+          <v-col class="pa-0 d-flex" cols="12" md="6">
+            <v-col class="d-flex justify-center" cols="1">
+              <!-- create a checkbox -->
+              <input type="checkbox" id="checkbox" v-model="checked" />
+            </v-col>
+
+            <v-col cols="11">
+              <div class="fill-height pa-5" style="border: 1px solid black">
+                <v-row>
+                  <v-col xs="12">
+                    <div class="font-weight-bold" style="color: #28acf6">
+                      Employee information in the Accounting department 2022
+                    </div>
+                  </v-col>
+
+                  <v-col class="d-flex justify-end" xs="12">
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="#F46C4E"
+                      rounded="0"
+                      flat
+                      max-height="40"
+                    >
+                      Accounting
+                    </v-card>
+
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="#F4C64E"
+                      rounded="0"
+                      flat
+                      max-height="40"
+                    >
+                      ERP
+                    </v-card>
+
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="primary"
+                      max-height="40"
+                    >
+                      Add
+                    </v-card>
+                  </v-col>
+                </v-row>
+
+                <v-row>
+                  <v-col>
+                    <div class="font-weight-bold">
+                      Employee info in the Accounting
+                    </div>
+                  </v-col>
+                </v-row>
+
+                <v-row>
+                  <v-col>
+                    <div class="font-weight-bold">
+                      Last data update: October 24, 2022
+                    </div>
+                  </v-col>
+                </v-row>
+
+                <v-row>
+                  <v-col class="d-flex">
+                    <v-img class="mr-5" max-width="50px" src="/seki.png" />
+
+                    <v-img class="mr-5" max-width="50px" src="/seki.png" />
+                  </v-col>
+                </v-row>
+              </div>
+            </v-col>
+          </v-col>
+
+          <v-col class="pa-0 d-flex" cols="12" md="6">
+            <v-col class="d-flex justify-center" cols="1">
+              <!-- create a checkbox -->
+              <input type="checkbox" id="checkbox" v-model="checked" />
+            </v-col>
+
+            <v-col cols="11">
+              <div class="fill-height pa-5" style="border: 1px solid black">
+                <v-row>
+                  <v-col xs="12">
+                    <div class="font-weight-bold" style="color: #28acf6">
+                      Employee information in the Accounting department 2022
+                    </div>
+                  </v-col>
+
+                  <v-col class="d-flex justify-end" xs="12">
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="#F46C4E"
+                      rounded="0"
+                      flat
+                      max-height="40"
+                    >
+                      Accounting
+                    </v-card>
+
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="#F4C64E"
+                      rounded="0"
+                      flat
+                      max-height="40"
+                    >
+                      ERP
+                    </v-card>
+
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="primary"
+                      max-height="40"
+                    >
+                      Add
+                    </v-card>
+                  </v-col>
+                </v-row>
+
+                <v-row>
+                  <v-col>
+                    <div class="font-weight-bold">
+                      Employee info in the Accounting
+                    </div>
+                  </v-col>
+                </v-row>
+
+                <v-row>
+                  <v-col>
+                    <div class="font-weight-bold">
+                      Last data update: October 24, 2022
+                    </div>
+                  </v-col>
+                </v-row>
+
+                <v-row>
+                  <v-col class="d-flex">
+                    <v-img class="mr-5" max-width="50px" src="/seki.png" />
+
+                    <v-img class="mr-5" max-width="50px" src="/seki.png" />
+                  </v-col>
+                </v-row>
+              </div>
+            </v-col>
+          </v-col>
+          <v-col class="pa-0 d-flex" cols="12" md="6">
+            <v-col class="d-flex justify-center" cols="1">
+              <!-- create a checkbox -->
+              <input type="checkbox" id="checkbox" v-model="checked" />
+            </v-col>
+
+            <v-col cols="11">
+              <div class="fill-height pa-5" style="border: 1px solid black">
+                <v-row>
+                  <v-col xs="12">
+                    <div class="font-weight-bold" style="color: #28acf6">
+                      Employee information in the Accounting department 2022
+                    </div>
+                  </v-col>
+
+                  <v-col class="d-flex justify-end" xs="12">
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="#F46C4E"
+                      rounded="0"
+                      flat
+                      max-height="40"
+                    >
+                      Accounting
+                    </v-card>
+
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="#F4C64E"
+                      rounded="0"
+                      flat
+                      max-height="40"
+                    >
+                      ERP
+                    </v-card>
+
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="primary"
+                      max-height="40"
+                    >
+                      Add
+                    </v-card>
+                  </v-col>
+                </v-row>
+
+                <v-row>
+                  <v-col>
+                    <div class="font-weight-bold">
+                      Employee info in the Accounting
+                    </div>
+                  </v-col>
+                </v-row>
+
+                <v-row>
+                  <v-col>
+                    <div class="font-weight-bold">
+                      Last data update: October 24, 2022
+                    </div>
+                  </v-col>
+                </v-row>
+
+                <v-row>
+                  <v-col class="d-flex">
+                    <v-img class="mr-5" max-width="50px" src="/seki.png" />
+
+                    <v-img class="mr-5" max-width="50px" src="/seki.png" />
+                  </v-col>
+                </v-row>
+              </div>
+            </v-col>
+          </v-col>
+        </v-row>
+      </v-col>
+
+      <v-col cols="1" />
+    </v-row>
+  </div>
+</template>
+
+<script setup>
+import { ref } from "vue";
+
+const value = ref(new Date());
+</script>
+
+<style scoped>
+.custom-card {
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--v-theme-primary)) 80%,
+    rgb(var(--v-theme-secondary)) 100%
+  );
+}
+
+.sometest {
+  color: red;
+}
+</style>
