@@ -30,11 +30,11 @@
 
           <v-col class="d-flex justify-end">
             <v-row>
-              <v-col class="d-flex align-center justify-end" cols="3">
+              <v-col class="d-flex align-center justify-end" cols="6">
                 <div class="text-h6">Order by</div>
               </v-col>
 
-              <v-col class="d-flex align-center" cols="6">
+              <v-col class="d-flex align-center" cols="3">
                 <v-select
                   variant="outlined"
                   :items="['foo', 'bar']"
@@ -73,21 +73,29 @@
                   class="fill-height pa-5 d-flex justify-center"
                   style="border: 1px solid black"
                 >
-                  <div style="color: #0f7ab6">School(16)</div>
+                  <div style="color: #0f7ab6">Centre(9)</div>
+                </v-col>
+              </v-row>
+
+              <v-row class="px-10 mb-3">
+                <v-col class="pa-2 d-flex justify-end bg-blue">
+                  <div class="text-body-2" style="color: white">
+                    Show more
+                  </div>
                 </v-col>
               </v-row>
             </v-col>
 
             <v-col>
               <v-row class="mb-3" justify="center">
-                <div class="text-h6 font-weight-bold">Dataset Group</div>
+                <div class="text-h6 font-weight-bold">Specific Words</div>
               </v-row>
               <v-row class="px-10 mb-3">
                 <v-col
                   class="fill-height pa-5 d-flex justify-center"
                   style="border: 1px solid black"
                 >
-                  <div style="color: #0f7ab6">School(16)</div>
+                  <div style="color: #0f7ab6">Budget</div>
                 </v-col>
               </v-row>
 
@@ -96,80 +104,88 @@
                   class="fill-height pa-5 d-flex justify-center"
                   style="border: 1px solid black"
                 >
-                  <div style="color: #0f7ab6">School(16)</div>
+                  <div style="color: #0f7ab6">Report</div>
                 </v-col>
               </v-row>
+
+              <v-row class="px-10 mb-3">
+                <v-col class="pa-2 d-flex justify-end bg-blue">
+                  <div class="text-body-2" style="color: white">
+                    Show more
+                  </div>
+                </v-col>
+              </v-row>
+
             </v-col>
           </v-col>
 
           <v-col cols="12" md="8">
-            <v-col class="pa-0" cols="11" >
-            <div class="fill-height pa-5" style="border: 1px solid black">
-              <v-row>
-                <v-col xs="12">
-                  <div class="font-weight-bold" style="color: #28acf6">
-                    Employee information in the Accounting department 2022
-                  </div>
-                </v-col>
+            <v-col class="pa-0" cols="11">
+              <div class="fill-height pa-5" style="border: 1px solid black">
+                <v-row>
+                  <v-col xs="12">
+                    <div class="font-weight-bold" style="color: #28acf6">
+                      Employee information in the Accounting department 2022
+                    </div>
+                  </v-col>
 
-                <v-col class="d-flex justify-end" xs="12">
-                  <v-card
-                    class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
-                    color="#F46C4E"
-                    rounded="0"
-                    flat
-                    max-height="40"
-                  >
-                    Accounting
-                  </v-card>
+                  <v-col class="d-flex justify-end" xs="12">
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="#F46C4E"
+                      rounded="0"
+                      flat
+                      max-height="40"
+                    >
+                      Accounting
+                    </v-card>
 
-                  <v-card
-                    class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
-                    color="#F4C64E"
-                    rounded="0"
-                    flat
-                    max-height="40"
-                  >
-                    ERP
-                  </v-card>
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="#F4C64E"
+                      rounded="0"
+                      flat
+                      max-height="40"
+                    >
+                      ERP
+                    </v-card>
 
-                  <v-card
-                    class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
-                    color="primary"
-                    max-height="40"
-                  >
-                    Add
-                  </v-card>
-                </v-col>
-              </v-row>
+                    <v-card
+                      class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+                      color="primary"
+                      max-height="40"
+                    >
+                      Add
+                    </v-card>
+                  </v-col>
+                </v-row>
 
-              <v-row>
-                <v-col>
-                  <div class="font-weight-bold">
-                    Employee info in the Accounting
-                  </div>
-                </v-col>
-              </v-row>
+                <v-row>
+                  <v-col>
+                    <div class="font-weight-bold">
+                      Employee info in the Accounting
+                    </div>
+                  </v-col>
+                </v-row>
 
-              <v-row>
-                <v-col>
-                  <div class="font-weight-bold">
-                    Last data update: October 24, 2022
-                  </div>
-                </v-col>
-              </v-row>
+                <v-row>
+                  <v-col>
+                    <div class="font-weight-bold">
+                      Last data update: October 24, 2022
+                    </div>
+                  </v-col>
+                </v-row>
 
-              <v-row>
-                <v-col class="d-flex">
-                  <v-img class="mr-5" max-width="50px" src="/seki.png" />
+                <v-row>
+                  <v-col class="d-flex">
+                    <v-img class="mr-5" max-width="50px" src="/seki.png" />
 
-                  <v-img class="mr-5" max-width="50px" src="/seki.png" />
-                </v-col>
-              </v-row>
-            </div>
+                    <v-img class="mr-5" max-width="50px" src="/seki.png" />
+                  </v-col>
+                </v-row>
+              </div>
+            </v-col>
           </v-col>
-          </v-col>
-
         </v-row>
       </v-col>
     </v-row>
