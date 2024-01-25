@@ -1,226 +1,113 @@
 <template>
-    <div>
-      <v-row class="ma-0" >
-        <v-img src="/mfu_bg.png" cover max-height="30rem">
-          <v-row no-gutters align="center" justify="center" class="fill-height">
-            <v-col cols="8" md="6">
-              <v-row>
-                <v-text-field
-                  rounded="lg"
-                  bg-color="white"
-                  label="Search Datasets"
-                  variant="solo"
-                ></v-text-field>
-              </v-row>
-  
-              <v-row justify="center">
-                <v-card
-                  v-ripple
-                  rounded="lg"
-                  color="primary"
-                  class="cursor-pointer pa-3"
+  <div>
+    <v-row class="mt-10">
+      <v-col cols="1" />
+
+      <v-col>
+        <v-row>
+          <div class="text-h5" style="color: #070747">
+            Budgetary Information for Revenue and Expenditure in the Procurement
+            Department 2565
+          </div>
+        </v-row>
+
+        <v-row class="mt-8">
+          <v-card
+            class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+            color="#4EA5F4"
+            rounded="0"
+            flat
+            max-height="40"
+          >
+            Procurement
+          </v-card>
+
+          <v-card
+            class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+            color="#F4C64E"
+            rounded="0"
+            flat
+            max-height="40"
+          >
+            Budget 2022
+          </v-card>
+
+          <v-card
+            class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+            color="transparent"
+            rounded="0"
+            flat
+            max-height="40"
+          >
+            <div style="color: rgb(var(--v-theme-secondary))">
+              <v-icon size="x-large"> mdi-chart-line </v-icon>
+              3424
+            </div>
+          </v-card>
+
+          <v-card
+            class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
+            color="primary"
+            max-height="40"
+          >
+            Add
+          </v-card>
+        </v-row>
+
+        <v-row class="mt-16">
+          <v-col cols="8" style="border: 1px solid black"> </v-col>
+
+          <v-col cols="4" class="pl-5">
+            <v-row>
+              <v-col cols="4" style="border: 1px solid black">
+                <v-row>
+                  <v-img class="mx-3 mt-3" src="/seki.png" />
+                </v-row>
+
+                <v-row>
+                  <v-col cols="12" class="text-center">
+                    <div class="text-h6 font-weight-bold">Download</div>
+                  </v-col>
+                </v-row>
+              </v-col>
+              <v-col cols="7" class="ml-2" style="border: 1px solid black">
+                <div style="color: #070747">
+                  Budgetary Information for Revenue and Expenditure in the
+                  Procurement Department 2565
+                </div>
+                <div
+                  class="font-weight-bold pl-3"
+                  style="color: rgb(var(--v-theme-secondary))"
                 >
-                  <v-icon> mdi-magnify </v-icon>
-                  Search
-                </v-card>
-              </v-row>
-  
-              <v-row justify="center" class="mt-7">
-                <v-card
-                  v-ripple
-                  rounded="lg"
-                  color="primary"
-                  class="cursor-pointer pa-3"
-                >
-                  <v-icon> mdi-chart-line </v-icon>
-                  420
-                </v-card>
-              </v-row>
-            </v-col>
-          </v-row>
-        </v-img>
-      </v-row>
-  
-      <v-row class="fill-height mt-2" no-gutters align="center">
-        <v-row align="center">
-          <v-col>
-            <v-divider style="opacity: 1" color="secondary " thickness="4" />
-          </v-col>
-  
-          <v-col cols="2" md="1">
-            <div class="text-center text-h5 font-weight-bold">Group</div>
-          </v-col>
-  
-          <v-col>
-            <v-divider style="opacity: 1" color="secondary " thickness="4" />
+                  Download
+                </div>
+              </v-col>
+            </v-row>
           </v-col>
         </v-row>
-      </v-row>
-  
-      <v-row>
-        <v-col cols="1" md="2" lg="3"> </v-col>
-  
-        <v-col>
-          <v-row>
-            <v-col cols="6" md="4" class="d-flex justify-center">
-              <v-card
-                v-ripple
-                class="cursor-pointer custom-card"
-                width="180px"
-                height="80px"
-              >
-                <span
-                  class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
-                  >School</span
-                >
-              </v-card>
-            </v-col>
-  
-            <v-col cols="6" md="4" class="d-flex justify-center">
-              <v-card
-                v-ripple
-                class="cursor-pointer custom-card"
-                width="180px"
-                height="80px"
-              >
-                <span
-                  class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
-                  >Centre</span
-                >
-              </v-card>
-            </v-col>
-  
-            <v-col cols="6" md="4" class="d-flex justify-center">
-              <v-card
-                v-ripple
-                class="cursor-pointer custom-card"
-                width="180px"
-                height="80px"
-              >
-                <span
-                  class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
-                  >Institution</span
-                >
-              </v-card>
-            </v-col>
-  
-            <v-col cols="6" md="4" class="d-flex justify-center">
-              <v-card
-                v-ripple
-                class="cursor-pointer custom-card"
-                width="180px"
-                height="80px"
-              >
-                <span
-                  class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
-                  >Academic Office</span
-                >
-              </v-card>
-            </v-col>
-  
-            <v-col cols="6" md="4" class="d-flex justify-center">
-              <v-card
-                v-ripple
-                class="cursor-pointer custom-card"
-                width="180px"
-                height="80px"
-              >
-                <span
-                  class="text-white text-center fill-height d-flex align-center justify-center"
-                  >Central Administrative Office</span
-                >
-              </v-card>
-            </v-col>
-  
-            <v-col cols="6" md="4" class="d-flex justify-center">
-              <v-card
-                v-ripple
-                class="cursor-pointer custom-card"
-                width="180px"
-                height="80px"
-              >
-                <span
-                  class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
-                  >University Council Office</span
-                >
-              </v-card>
-            </v-col>
-  
-            <v-col cols="6" md="4" class="d-flex justify-center">
-              <v-card
-                v-ripple
-                class="cursor-pointer custom-card"
-                width="180px"
-                height="80px"
-              >
-                <span
-                  class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
-                  >Internal Audit
-                </span>
-              </v-card>
-            </v-col>
-  
-            <v-col cols="6" md="4" class="d-flex justify-center">
-              <v-card
-                v-ripple
-                class="cursor-pointer custom-card"
-                width="180px"
-                height="80px"
-              >
-                <span
-                  class="text-white text-center fill-height d-flex align-center justify-center"
-                  >Property and Asset Management Office</span
-                >
-              </v-card>
-            </v-col>
-  
-            <v-col cols="6" md="4" class="d-flex justify-center">
-              <v-card
-                v-ripple
-                class="cursor-pointer custom-card"
-                width="180px"
-                height="80px"
-              >
-                <span
-                  class="text-h6 text-white text-center fill-height d-flex align-center justify-center"
-                  >Special Unit</span
-                >
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-col>
-  
-        <v-col cols="1" md="2" lg="3"> </v-col>
-  
-        <v-divider
-          class="mt-10"
-          style="opacity: 1"
-          color="secondary "
-          thickness="4"
-        />
-      </v-row>
-  
-   
-    </div>
-  </template>
-  
-  <script setup>
-  import { ref } from "vue";
-  
-  const value = ref(new Date());
-  </script>
-  
-  <style scoped>
-  .custom-card {
-    background: linear-gradient(
-      to bottom,
-      rgb(var(--v-theme-primary)) 80%,
-      rgb(var(--v-theme-secondary)) 100%
-    );
-  }
-  
-  .sometest{
-    color: red;
-  }
-  </style>
-  
+      </v-col>
+
+      <v-col cols="1" />
+    </v-row>
+  </div>
+</template>
+
+<script setup>
+import { ref } from "vue";
+
+const value = ref(new Date());
+</script>
+
+<style scoped>
+.custom-card {
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--v-theme-primary)) 80%,
+    rgb(var(--v-theme-secondary)) 100%
+  );
+}
+
+.sometest {
+  color: red;
+}
+</style>

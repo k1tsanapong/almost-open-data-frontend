@@ -114,7 +114,7 @@
         </v-container>
       </v-main>
 
-      <v-footer class="bg-primary mt-10">
+      <v-footer class="bg-primary mt-10" style="max-height: 200px;">
         <v-row class="ma-0">
           <v-col class="hidden-sm-and-down" md="2" />
 
