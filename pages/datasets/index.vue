@@ -115,7 +115,15 @@
           </v-col>
 
           <v-col cols="12" md="8">
-            <v-col class="pa-0" cols="11"> <dataset-preview /> </v-col>
+            <v-col class="pa-0" cols="11">
+              
+              <div v-for="dataset in datasets.data">
+                
+               <dataset-preview :dataset="dataset" />
+
+              </div>
+              
+                </v-col>
             <!-- <span v-for="dataset in datasets.data"> {{ dataset.attributes.title }} </span> -->
           </v-col>
         </v-row>
@@ -129,7 +137,7 @@ import { ref } from "vue";
 
 const value = ref(new Date());
 
-const { data: datasets } = await useMyFetch("/api/datasets");
+const { data: datasets } = await useMyFetch("/api/datasets?populate=*");
 </script>
 
 <style scoped>

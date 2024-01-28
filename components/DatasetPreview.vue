@@ -1,9 +1,9 @@
 <template>
-  <div class="fill-height pa-5" style="border: 1px solid black">
+  <div class="fill-height pa-5 mb-5" style="border: 1px solid black">
     <v-row>
       <v-col xs="12">
         <div class="font-weight-bold" style="color: #28acf6">
-          Employee information in the Accounting department 2022
+          {{dataset.attributes.title}}
         </div>
       </v-col>
 
@@ -40,13 +40,13 @@
 
     <v-row>
       <v-col>
-        <div class="font-weight-bold">Employee info in the Accounting</div>
+        <!-- <div class="font-weight-bold">Employee info in the Accounting</div> -->
       </v-col>
     </v-row>
 
     <v-row>
       <v-col>
-        <div class="font-weight-bold">Last data update: October 24, 2022</div>
+        <div class="font-weight-bold">Last data update: {{dataset.attributes.updatedAt }}</div>
       </v-col>
     </v-row>
 
@@ -60,8 +60,16 @@
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+// implement prop setup
+const props = defineProps({
+  dataset: {
+    type: Object,
+    default: 'default value',
+    required: true,
+  },
+})
+
 </script>
 
 <style></style>
