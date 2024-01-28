@@ -4,6 +4,12 @@ import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.BASE_URL || "http://localhost:1337",
+    },
+  },
+
   router: {
     options: {
       linkActiveClass: "custom-active-link",
