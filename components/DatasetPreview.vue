@@ -2,31 +2,19 @@
   <div class="fill-height pa-5 mb-5" style="border: 1px solid black">
     <v-row>
       <v-col xs="12">
-        <div class="font-weight-bold" style="color: #28acf6">
-          {{dataset.attributes.title}}
+          <nuxt-link :to="`/datasets/${dataset.id}`" class="text-decoration-none">
+            <div class="text-h5 link-to" style="color: #28acf6">
+          {{ dataset.attributes.title }}
         </div>
+        </nuxt-link>
       </v-col>
 
       <v-col class="d-flex justify-end" xs="12">
-        <v-card
-          class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
-          color="#F46C4E"
-          rounded="0"
-          flat
-          max-height="40"
-        >
-          Accounting
-        </v-card>
-
-        <v-card
-          class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
-          color="#F4C64E"
-          rounded="0"
-          flat
-          max-height="40"
-        >
-          ERP
-        </v-card>
+        <tag-card
+          v-for="tag in dataset.attributes.dataset_tags.data"
+          :key="tag.id"
+          :tag="tag"
+        />
 
         <v-card
           class="mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
@@ -46,7 +34,15 @@
 
     <v-row>
       <v-col>
-        <div class="font-weight-bold">Last data update: {{dataset.attributes.updatedAt }}</div>
+        <div class="font-weight-bold">
+          Last data update:
+          {{
+            $datefns.format(
+              $datefns.parseISO(dataset.attributes.updatedAt),
+              "MMMM dd',' yyyy"
+            )
+          }}
+        </div>
       </v-col>
     </v-row>
 
@@ -61,15 +57,18 @@
 </template>
 
 <script setup>
+const { $datefns } = useNuxtApp();
+
 // implement prop setup
 const props = defineProps({
   dataset: {
     type: Object,
-    default: 'default value',
     required: true,
   },
-})
-
+});
 </script>
 
-<style></style>
+<style>
+.link-to:hover, .link-to:active {text-decoration: underline;}
+
+</style>

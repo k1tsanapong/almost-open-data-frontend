@@ -117,7 +117,7 @@
           <v-col cols="12" md="8">
             <v-col class="pa-0" cols="11">
               
-              <div v-for="dataset in datasets.data">
+              <div v-for="dataset in datasets.data" :key="dataset.id">
                 
                <dataset-preview :dataset="dataset" />
 
@@ -135,9 +135,19 @@
 <script setup>
 import { ref } from "vue";
 
+const { $datefns} = useNuxtApp()
+
 const value = ref(new Date());
 
-const { data: datasets } = await useMyFetch("/api/datasets?populate=*");
+const { data: datasets } = await useMyFetch("/api/datasets?populate[dataset_tags][populate][0]=tag_id&populate[dataset_files][populate][1]=file");
+
+onMounted(() => {
+
+console.log(datasets.value.data[0].attributes.updatedAt);
+
+  console.log('Parsed Date:', $datefns.parseISO(datasets.value.data[0].attributes.updatedAt));
+});
+
 </script>
 
 <style scoped>

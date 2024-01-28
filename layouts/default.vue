@@ -185,9 +185,18 @@ export default {
   },
   methods: {
     isRouteActive(link) {
-      if (this.$route.path == link) {
+
+console.log(this.$route.path);
+console.log(link);
+      if (this.$route.path == ('/') && link == '/') {
         return true;
-      } else {
+      }
+      
+      else if (this.$route.path.includes(link) && link != '/') {
+        return true;
+      }
+
+      else {
         return false;
       }
     },
