@@ -1,15 +1,15 @@
 <template>
   <div class="fill-height pa-5 mb-5" style="border: 1px solid black">
     <v-row>
-      <v-col xs="12">
+      <v-col cols="12">
         <nuxt-link :to="`/datasets/${dataset.id}`" class="text-decoration-none">
-          <div class="text-h5 link-to" style="color: #28acf6">
+          <div class="text-h6 link-to" style="color: #28acf6">
             {{ dataset.attributes.title }}
           </div>
         </nuxt-link>
       </v-col>
 
-      <v-col class="d-flex justify-end" xs="12">
+      <v-col class="d-flex justify-end" cols="12">
         <tag-card
           v-for="tag in dataset.attributes.dataset_tags.data"
           :key="tag.id"
@@ -33,7 +33,7 @@
     </v-row>
 
     <v-row>
-      <v-col>
+      <v-col class="d-flex justify-end" >
         <div class="font-weight-bold">
           Last data update:
           {{
@@ -47,7 +47,7 @@
     </v-row>
 
     <v-row>
-      <v-col class="d-flex">
+      <v-col class="d-flex justify-end" >
         <!-- <v-img class="mr-5" max-width="50px" src="/seki.png" /> -->
 
         <icon-download

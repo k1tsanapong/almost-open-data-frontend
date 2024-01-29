@@ -114,7 +114,7 @@
         </v-container>
       </v-main>
 
-      <v-footer class="bg-primary" style="max-height: mt-25rem;">
+      <v-footer class="bg-primary" style="max-height: mt-25rem">
         <v-row class="ma-0">
           <v-col class="hidden-sm-and-down" md="2" />
 
@@ -185,23 +185,13 @@ export default {
   },
   methods: {
     isRouteActive(link) {
-
-console.log(this.$route.path);
-console.log(link);
-      if (this.$route.path == ('/') && link == '/') {
+      if (this.$route.path == "/" && link == "/") {
         return true;
-      }
-      
-      else if (this.$route.path.includes(link) && link != '/') {
+      } else if (this.$route.path.includes(link) && link != "/") {
         return true;
-      }
-
-      else {
+      } else {
         return false;
       }
-    },
-    log() {
-      console.log(this.categories);
     },
   },
 };
