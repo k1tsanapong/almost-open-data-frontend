@@ -9,7 +9,7 @@
         <v-row>
           <v-col cols="2" />
 
-          <v-col cols="12" sm="8" class="d-flex justify-center">
+          <v-col cols="12" sm="8" class="d-flex justify-center px-10">
             <v-autocomplete
               class="flex-full-width"
               rounded="lg"
@@ -26,15 +26,15 @@
         </v-row>
 
         <v-row>
-          <v-spacer />
+          <v-col class="hidden-sm-and-down" md="6"  />
 
-          <v-col class="d-flex justify-end">
+          <v-col>
             <v-row>
-              <v-col class="d-flex align-center justify-end" cols="6">
+              <v-col class="d-flex align-center justify-end" cols="6" md="6">
                 <div class="text-h6">Order by</div>
               </v-col>
 
-              <v-col class="d-flex align-center" cols="3">
+              <v-col class="d-flex align-center" cols="6" md="3">
                 <v-select
                   variant="outlined"
                   :items="['foo', 'bar']"
@@ -47,6 +47,10 @@
               </v-col>
             </v-row>
           </v-col>
+
+          <v-col class="hidden-md-and-up" cols="1" />
+
+
         </v-row>
       </v-col>
 
@@ -54,7 +58,7 @@
         <v-row
           ><v-col cols="1" />
 
-          <v-col cols="12" md="3">
+          <v-col class="hidden-sm-and-down" cols="12" md="3">
             <v-col>
               <v-row class="mb-3" justify="center">
                 <div class="text-h6 font-weight-bold">Dataset Group</div>
@@ -114,7 +118,7 @@
             </v-col>
           </v-col>
 
-          <v-col cols="12" md="8">
+          <v-col class="d-flex justify-center" cols="12" md="8">
             <v-col class="pa-0" cols="11">
               
               <div v-for="dataset in datasets.data" :key="dataset.id">
