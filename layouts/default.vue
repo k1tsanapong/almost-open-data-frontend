@@ -75,7 +75,7 @@
           </nuxt-link>
         </v-col>
 
-        <v-col v-ripple class="cursor-pointer" md="2">
+        <!-- <v-col v-ripple class="cursor-pointer" md="2">
           <nuxt-link to="/data-inventory" class="text-decoration-none">
             <v-card
               class="text-center py-3 not-active"
@@ -89,7 +89,7 @@
               <div>Data Inventory</div>
             </v-card>
           </nuxt-link>
-        </v-col>
+        </v-col> -->
 
         <v-col v-ripple class="cursor-pointer" md="2">
           <nuxt-link to="/data-request" class="text-decoration-none">

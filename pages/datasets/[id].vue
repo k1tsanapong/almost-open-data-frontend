@@ -12,12 +12,11 @@
 
         <v-row class="mt-8">
           <tag-card
-          class="mt-3"
-          v-for="tag in  dataset.data.attributes.dataset_tags.data"
-          :key="tag.id"
-          :tag="tag"
-        />
-
+            class="mt-3"
+            v-for="tag in dataset.data.attributes.dataset_tags.data"
+            :key="tag.id"
+            :tag="tag"
+          />
 
           <v-card
             class="mt-3 mr-5 pa-5 text-white text-center fill-height d-flex align-center justify-center"
@@ -160,7 +159,12 @@
           </v-col>
 
           <v-col cols="12" sm="5">
-            <v-row class="mb-5">
+            <v-row
+              class="mb-5"
+              v-for="file_data in dataset.data.attributes.dataset_files.data"
+              :key="file_data.id"
+              :file_data="file_data"
+            >
               <v-col
                 cols="12"
                 md="4"
@@ -173,14 +177,15 @@
                 <div class="fill-height pa-3" style="border: 1px solid black">
                   <v-row justify="center">
                     <v-img
-                      max-width="150px"
+                         max-width="150px"
+                      max-height="70px"
                       class="mx-3 mt-3"
-                      src="/seki.png"
+                      :src="`/icon/${file_ext(file_data.attributes.file.data.attributes.ext)}.png`"
                     />
                   </v-row>
 
                   <v-row justify="center">
-                    <div class="text-h6 font-weight-bold text-center">
+                    <div @click="download(file_data.attributes.file.data.attributes.url)" class="text-h6 font-weight-bold text-center">
                       Download
                     </div>
                   </v-row>
@@ -198,12 +203,12 @@
               >
                 <div class="fill-height pa-3" style="border: 1px solid black">
                   <div style="color: #070747">
-                    Budgetary Information for Revenue and Expenditure in the
-                    Procurement Department 2565
+                    {{file_data.attributes.file.data.attributes.name}}
                   </div>
                   <div
                     class="font-weight-bold pl-3"
                     style="color: rgb(var(--v-theme-secondary))"
+                    @click="download(file_data.attributes.file.data.attributes.url)"
                   >
                     Download
                   </div>
@@ -293,6 +298,7 @@
 
 <script setup>
 import { ref } from "vue";
+const config = useRuntimeConfig();
 
 const { $datefns } = useNuxtApp();
 const route = useRoute();
@@ -302,6 +308,27 @@ const value = ref(new Date());
 const { data: dataset } = await useMyFetch(
   `/api/datasets/${route.params.id}?populate[dataset_tags][populate][0]=tag_id&populate[dataset_files][populate][1]=file`
 );
+
+console.log(dataset.value.data.attributes.dataset_tags.data);
+
+// methods
+const formatDate = (date) => {
+  return $datefns.format($datefns.parseISO(date), "MMMM dd',' yyyy");
+};
+
+const file_ext = (file_surname) => {
+  const ext = file_surname.substring(1);
+  return ext;
+};
+
+// click for download
+const download = (url) => {
+  console.log(url);
+  const file_url = config.public.baseURL+url;
+
+  window.open(file_url, "_blank");
+};
+
 </script>
 <style scoped>
 .custom-card {
