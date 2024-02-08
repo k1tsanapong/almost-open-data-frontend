@@ -144,6 +144,21 @@ const { $datefns} = useNuxtApp()
 const value = ref(new Date());
 
 const { data: datasets } = await useMyFetch("/api/datasets?populate[dataset_tags][populate][0]=tag_id&populate[dataset_files][populate][1]=file");
+const { data: tags } = await useMyFetch("/api/tags?populate=*");
+
+// // count reason
+//       const reasonCount = reason.reduce((acc, appointment) => {
+//         const reason = appointment.reason;
+//         acc[reason] = (acc[reason] || 0) + 1;
+//         return acc;
+//       }, {});
+
+//       // reason name
+//       this.reasonName = Object.keys(reasonCount);
+
+//       // reason count
+//       this.reasonCount = Object.values(reasonCount);
+
 
 onMounted(() => {
 
