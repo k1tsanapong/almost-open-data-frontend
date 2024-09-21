@@ -4,17 +4,17 @@ RUN mkdir -p /usr/src/nuxt-app
 WORKDIR /usr/src/nuxt-app
 COPY . .
 
-ARG BASE_URL=http://localhost:1337
-ARG NUXT_PORT=3000
-ARG NUXT_HOST=0.0.0.0
+ARG BASE_URL
+ARG PORT
+ARG HOST
 
 
 ENV BASE_URL=${BASE_URL}
-ENV NUXT_PORT=${NUXT_PORT}
-ENV NUXT_HOST=${NUXT_HOST}
+ENV PORT=${PORT}
+ENV HOST=${HOST}
 
-RUN yarn install && yarn build
+RUN npm install
 
-EXPOSE 3000 
+EXPOSE ${PORT} 
 
-ENTRYPOINT ["node", ".output/server/index.mjs"]
+CMD ["npm", "run" ,"dev"]

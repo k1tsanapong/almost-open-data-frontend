@@ -1,13 +1,15 @@
-.tmp/
+# .tmp/
 
-.cache/
+# .cache/
 
-.git/
+# .git/
 
-build/
+# build/
 
 node_modules/
 
-data/
+# data/
 
-npm-debug.log
+.env
+
+# npm-debug.log
