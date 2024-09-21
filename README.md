@@ -1,3 +1,6 @@
+# Deploy
+https://almost-open-data-frontend-568599804906.asia-southeast1.run.app
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
