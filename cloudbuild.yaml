@@ -31,7 +31,7 @@ steps:
    - '--max-instances'
    - '1'
    - '--memory'
-   - '256Mi'
+   - '1Gi'
 
     # Add IAM policy binding to allow all users to invoke the service
  - name: 'gcr.io/cloud-builders/gcloud'
