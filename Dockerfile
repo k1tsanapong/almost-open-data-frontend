@@ -5,16 +5,16 @@ WORKDIR /usr/src/nuxt-app
 COPY . .
 
 ARG BASE_URL
-ARG PORT
-ARG HOST
+ARG NUXT_PORT
+ARG NUXT_HOST
 
 
 ENV BASE_URL=${BASE_URL}
-ENV PORT=${PORT}
-ENV HOST=${HOST}
+ENV NUXT_PORT=${NUXT_PORT}
+ENV NUXT_HOST=${NUXT_HOST}
 
-RUN npm install
+RUN yarn install && yarn build
 
-EXPOSE ${PORT} 
+EXPOSE 3000 
 
-CMD ["npm", "run" ,"dev"]
+ENTRYPOINT ["node", ".output/server/index.mjs"]
